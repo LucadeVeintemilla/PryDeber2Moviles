@@ -23,6 +23,7 @@ public class Bienvenido extends AppCompatActivity {
 
 
         btn_ir  = findViewById(R.id.bt_ir);
+        radioGroup = findViewById(R.id.radioGroup); // Agrega esta línea
 
 
 
