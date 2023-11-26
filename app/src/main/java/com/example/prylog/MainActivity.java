@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txt_usuario,txt_clave;
     Button btn_login;
 
-    private String user ="Admin",clave1 ="Admin";
+    private String user ="Admin",clave1 ="AdminJuan";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
