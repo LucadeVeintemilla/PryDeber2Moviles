@@ -7,11 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 
 public class Bienvenido extends AppCompatActivity {
 
     EditText txt_nombre;
     Button btn_ir;
+    RadioGroup radioGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,16 +24,24 @@ public class Bienvenido extends AppCompatActivity {
 
         btn_ir  = findViewById(R.id.bt_ir);
 
+
+
         btn_ir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent obj1 = new Intent(Bienvenido.this, Datos.class);
-                //Bundle
+                int radioButtonId = radioGroup.getCheckedRadioButtonId();
 
-                obj1.putExtra("nombre", txt_nombre.getText().toString());
-
-
-                startActivity(obj1);
+                if (radioButtonId == R.id.radioButton1) {
+                    // Ir a la Pantalla 1
+                    Intent intent = new Intent(Bienvenido.this, Pantalla3.class);
+                    intent.putExtra("nombre", txt_nombre.getText().toString());
+                    startActivity(intent);
+                } else if (radioButtonId == R.id.radioButton2) {
+                    // Ir a la Pantalla 2
+                    Intent intent = new Intent(Bienvenido.this, Pantalla4.class);
+                    intent.putExtra("nombre", txt_nombre.getText().toString());
+                    startActivity(intent);
+                }
 
             }
         });

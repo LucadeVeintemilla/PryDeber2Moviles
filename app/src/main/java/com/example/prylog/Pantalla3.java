@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-public class Datos extends AppCompatActivity {
+public class Pantalla3 extends AppCompatActivity {
 
     TextView lblResultado1, lblResultado2;
     @Override
