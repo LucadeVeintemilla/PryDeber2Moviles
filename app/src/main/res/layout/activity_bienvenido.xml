@@ -45,32 +45,32 @@
             android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pantalla 3" />
+            android:text="Ejercicio 1 (Factorial)" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pantalla 3" />
+            android:text="Ejercicio 2 (Primo)" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pantalla 4" />
+            android:text="Ejercicio 3 (Palindromo)" />
 
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pantalla 4" />
+            android:text="Ejercicio 4 (Copicuo)" />
 
         <RadioButton
             android:id="@+id/radioButton5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pantalla 4" />
+            android:text="Ejercicio 5 (Angulos)" />
 
         <!-- Agrega más RadioButtons según sea necesario -->
 

@@ -33,12 +33,27 @@ public class Bienvenido extends AppCompatActivity {
                 int radioButtonId = radioGroup.getCheckedRadioButtonId();
 
                 if (radioButtonId == R.id.radioButton1) {
-                    // Ir a la Pantalla 1
+                    // Ir a la Pantalla 3
                     Intent intent = new Intent(Bienvenido.this, Pantalla3.class);
                     intent.putExtra("nombre", txt_nombre.getText().toString());
                     startActivity(intent);
                 } else if (radioButtonId == R.id.radioButton2) {
-                    // Ir a la Pantalla 2
+                    // Ir a la Pantalla 3
+                    Intent intent = new Intent(Bienvenido.this, Pantalla3.class);
+                    intent.putExtra("nombre", txt_nombre.getText().toString());
+                    startActivity(intent);
+                }else if (radioButtonId == R.id.radioButton3) {
+                    // Ir a la Pantalla 4
+                    Intent intent = new Intent(Bienvenido.this, Pantalla4.class);
+                    intent.putExtra("nombre", txt_nombre.getText().toString());
+                    startActivity(intent);
+                }else if (radioButtonId == R.id.radioButton4) {
+                    // Ir a la Pantalla 4
+                    Intent intent = new Intent(Bienvenido.this, Pantalla4.class);
+                    intent.putExtra("nombre", txt_nombre.getText().toString());
+                    startActivity(intent);
+                }else if (radioButtonId == R.id.radioButton5) {
+                    // Ir a la Pantalla 4
                     Intent intent = new Intent(Bienvenido.this, Pantalla4.class);
                     intent.putExtra("nombre", txt_nombre.getText().toString());
                     startActivity(intent);
