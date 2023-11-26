@@ -23,6 +23,7 @@ public class Pantalla4 extends AppCompatActivity {
 
         txtPalindromo= findViewById(R.id.et_palabra);
         btn_palind  = findViewById(R.id.bt_palindromo);
+        lblResultado3 = findViewById(R.id.tv_palindromo); // Agrega esta línea
         Bundle miBundle = this.getIntent().getExtras();
         String nombre= miBundle.getString("nombre");
 
