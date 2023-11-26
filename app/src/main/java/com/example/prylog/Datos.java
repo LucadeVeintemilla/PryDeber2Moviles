@@ -19,15 +19,15 @@ public class Datos extends AppCompatActivity {
         lblResultado2 = findViewById(R.id.tv_resultado2);
 
         Bundle miBundle = this.getIntent().getExtras();
-        String nombre = miBundle.getString("nombre");
+        String numero= miBundle.getString("nombre");
 
 
-        String anio = miBundle.getString("anio");
-        String mes = miBundle.getString("mes");
+        //String anio = miBundle.getString("anio");
+        //String mes = miBundle.getString("mes");
 
-        String dia = miBundle.getString("dia");
+        //String dia = miBundle.getString("dia");
 
-        lblResultado1.setText("Bienvenido " + nombre + "Año " + anio + "Mes " + mes + "dia " + dia);
+        //lblResultado1.setText("Bienvenido " + nombre + "Año " + anio + "Mes " + mes + "dia " + dia);
 
 
 
