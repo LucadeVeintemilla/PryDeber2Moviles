@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 public class Pantalla4 extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
