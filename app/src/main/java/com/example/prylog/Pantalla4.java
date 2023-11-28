@@ -132,5 +132,15 @@ public class Pantalla4 extends AppCompatActivity {
                 lblResultado6.setText("");
             }
         });
+
+        Button btnRegresar2 = findViewById(R.id.btn_regresar2);
+        btnRegresar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+
     }
 }

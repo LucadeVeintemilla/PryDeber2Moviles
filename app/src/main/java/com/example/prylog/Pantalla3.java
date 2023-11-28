@@ -25,6 +25,8 @@ public class Pantalla3 extends AppCompatActivity {
         lblResultado1 = findViewById(R.id.tv_resultado1);
         lblResultado2 = findViewById(R.id.tv_resultado2);
 
+
+
         Bundle miBundle = this.getIntent().getExtras();
         String nombre= miBundle.getString("nombre");
         btn_calcular.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +81,16 @@ public class Pantalla3 extends AppCompatActivity {
         //String dia = miBundle.getString("dia");
 
         //lblResultado1.setText("Bienvenido " + nombre);
+
+        Button btnRegresar = findViewById(R.id.btn_regresar2);
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+
 
 
 
